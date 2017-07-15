@@ -1,3 +1,4 @@
-
-src/providers/.DS_Store
-.DS_Store
+*.DS_Store
+node_modules/
+plugins/
+platforms/
