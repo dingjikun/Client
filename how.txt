@@ -1,1 +1,2 @@
 ionic cordova plugin add https://github.com/dingjikun/VideorecorderPlugin.git
+merge miscs/styles.xml colors.xml with android/res/values
