@@ -16,4 +16,13 @@ page-home {
         margin-left: -50px;
         margin-right: -50px;
     }
+
+    .chatButton{
+        position: absolute;  
+        bottom:20%;
+        right: 50%; 
+        z-index: 2; 
+        margin-left: -50px;
+        margin-right: -50px;
+    }
 }

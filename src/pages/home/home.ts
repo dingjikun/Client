@@ -1,8 +1,9 @@
 import {Component, ViewChild, ElementRef} from '@angular/core';
 import {UserserviceProvider} from "../../providers/userservice/userservice";
 import { Geolocation } from '@ionic-native/geolocation';
-import {Platform} from 'ionic-angular';
+import {Platform, NavController} from 'ionic-angular';
 import { StockserviceProvider } from '../../providers/stockservice/stockservice';
+import {ChatChatsPage} from "../../pages/chat-chats/chat-chats";
 
 declare var BMap;
 declare var cordova:any;
@@ -21,9 +22,10 @@ export class HomePage {
   constructor(private userService: UserserviceProvider, 
     private readonly geolocation:Geolocation, 
     private readonly platform: Platform,
-    private readonly stockService:StockserviceProvider) {
+    private readonly stockService:StockserviceProvider,
+    private readonly navCtrl: NavController) {
     platform.ready().then(() => {
-      this.gpsMap();
+      //this.gpsMap();
     });
   }
 
@@ -62,6 +64,10 @@ export class HomePage {
     // }
     // );
     cordova.plugins.videorecorder.recordVideo(this.userService.userID, this.jd, this.wd);
+  }
+
+  chat() {
+    this.navCtrl.push('ChatChatsPage');
   }
 
 }

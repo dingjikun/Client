@@ -4,7 +4,7 @@ import "rxjs/add/operator/map";
 import {ReplaySubject, Observable} from "rxjs";
 import {Storage} from "@ionic/storage";
 import {JwtHelper, AuthHttp} from "angular2-jwt";
-import {SERVER_URL} from "../../config";
+import {SERVER_URL} from "../../configs/config";
 
 @Injectable()
 export class AuthProvider {

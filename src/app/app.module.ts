@@ -2,18 +2,21 @@ import {BrowserModule} from '@angular/platform-browser';
 import {NgModule, ErrorHandler} from '@angular/core';
 import {IonicApp, IonicModule, IonicErrorHandler} from 'ionic-angular';
 import {MyApp} from './app.component';
-import {HomePage} from '../pages/home/home';
-import {StatusBar} from '@ionic-native/status-bar';
-import {SplashScreen} from '@ionic-native/splash-screen';
-import {LoginPage} from "../pages/login/login";
-import {SignupPage} from "../pages/signup/signup";
-import {CustomFormsModule} from 'ng2-validation'
-import {Storage, IonicStorageModule} from "@ionic/storage";
 import {JwtHelper, AuthConfig, AuthHttp} from "angular2-jwt";
 import {Http, HttpModule, RequestOptions} from "@angular/http";
-import {AuthProvider} from "../providers/auth/auth";
-import { UserserviceProvider } from '../providers/userservice/userservice';
+import {CustomFormsModule} from 'ng2-validation'
+//native
+import {StatusBar} from '@ionic-native/status-bar';
+import {SplashScreen} from '@ionic-native/splash-screen';
+import {Storage, IonicStorageModule} from "@ionic/storage";
 import { Geolocation } from '@ionic-native/geolocation';
+//pages
+import {HomePage} from '../pages/home/home';
+import {LoginPage} from "../pages/login/login";
+import {SignupPage} from "../pages/signup/signup";
+//providers
+import { AuthProvider } from "../providers/auth/auth";
+import { UserserviceProvider } from '../providers/userservice/userservice';
 import { StockserviceProvider } from '../providers/stockservice/stockservice';
 
 export function authHttpServiceFactory(http: Http, options: RequestOptions, storage: Storage) {
@@ -47,6 +50,7 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions, stor
     HomePage,
     LoginPage,
     SignupPage
+    //ChatChatsPage
   ],
   providers: [
     StatusBar,

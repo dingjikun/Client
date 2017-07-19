@@ -27466,6 +27466,25 @@ ion-navbar.toolbar {
   color: red;
 }
 
+page-chat-chats .chat-picture {
+  border-radius: 50%;
+  width: 50px;
+  float: left;
+}
+
+page-chat-chats .chat-info {
+  float: left;
+  margin: 10px 0 0 20px;
+}
+
+page-chat-chats .chat-info .last-message-timestamp {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: #9A9898;
+}
+
 page-home #map {
   width: 100%;
   height: 100%;
@@ -27478,6 +27497,15 @@ page-home #map {
 page-home .capButton {
   position: absolute;
   bottom: 5%;
+  right: 50%;
+  z-index: 2;
+  margin-left: -50px;
+  margin-right: -50px;
+}
+
+page-home .chatButton {
+  position: absolute;
+  bottom: 20%;
   right: 50%;
   z-index: 2;
   margin-left: -50px;
