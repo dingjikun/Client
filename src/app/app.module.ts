@@ -18,6 +18,8 @@ import {SignupPage} from "../pages/signup/signup";
 import { AuthProvider } from "../providers/auth/auth";
 import { UserserviceProvider } from '../providers/userservice/userservice';
 import { StockserviceProvider } from '../providers/stockservice/stockservice';
+import { StompService } from 'ng2-stomp-service';
+import { ChatserviceProvider } from '../providers/chatservice/chatservice';
 
 export function authHttpServiceFactory(http: Http, options: RequestOptions, storage: Storage) {
   const authConfig = new AuthConfig({
@@ -50,7 +52,6 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions, stor
     HomePage,
     LoginPage,
     SignupPage
-    //ChatChatsPage
   ],
   providers: [
     StatusBar,
@@ -64,7 +65,9 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions, stor
       deps: [Http, RequestOptions, Storage]
     },
     UserserviceProvider,
-    StockserviceProvider]
+    StockserviceProvider,
+    StompService,
+    ChatserviceProvider]
 })
 export class AppModule {
 }

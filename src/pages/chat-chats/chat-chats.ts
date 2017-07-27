@@ -75,4 +75,8 @@ export class ChatChatsPage {
     ]);
   }
 
+  showMessages(chat): void {
+    this.navCtrl.push('ChatMessagesPage', {chat});
+  }
+
 }

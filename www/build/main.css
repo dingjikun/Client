@@ -27485,6 +27485,133 @@ page-chat-chats .chat-info .last-message-timestamp {
   color: #9A9898;
 }
 
+page-chat-messages .messages-page-navbar .chat-picture {
+  width: 50px;
+  border-radius: 50%;
+  float: left;
+}
+
+page-chat-messages .messages-page-navbar .chat-title {
+  line-height: 50px;
+  float: left;
+}
+
+page-chat-messages .messages-page-content > .scroll-content {
+  margin: 42px -16px 42px !important;
+}
+
+page-chat-messages .messages-page-content .day-wrapper .day-timestamp {
+  margin-left: calc(50% - 64px);
+  margin-right: calc(50% - 64px);
+  margin-bottom: 9px;
+  text-align: center;
+  line-height: 27px;
+  height: 27px;
+  border-radius: 3px;
+  color: gray;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  background: #d9effa;
+}
+
+page-chat-messages .messages-page-content .messages {
+  height: 100%;
+  background-image: url(../assets/img/chat/chat-background.jpg);
+  background-color: #E0DAD6;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+page-chat-messages .messages-page-content .message-wrapper {
+  margin-bottom: 9px;
+}
+
+page-chat-messages .messages-page-content .message-wrapper::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+page-chat-messages .messages-page-content .message {
+  display: inline-block;
+  position: relative;
+  max-width: 65vh;
+  border-radius: 7px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+page-chat-messages .messages-page-content .message.message-mine {
+  float: right;
+  background-color: #DCF8C6;
+}
+
+page-chat-messages .messages-page-content .message.message-mine::before {
+  right: -11px;
+  background-image: url(../assets/img/chat/message-mine.png);
+}
+
+page-chat-messages .messages-page-content .message.message-other {
+  float: left;
+  background-color: #FFF;
+}
+
+page-chat-messages .messages-page-content .message.message-other::before {
+  left: -11px;
+  background-image: url(../assets/img/chat/message-other.png);
+}
+
+page-chat-messages .messages-page-content .message.message-other::before, page-chat-messages .messages-page-content .message.message-mine::before {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  width: 12px;
+  height: 19px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+page-chat-messages .messages-page-content .message .message-content {
+  padding: 5px 7px;
+  word-wrap: break-word;
+}
+
+page-chat-messages .messages-page-content .message .message-content::after {
+  content: " \00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+  display: inline;
+}
+
+page-chat-messages .messages-page-content .message .message-content .sebm-google-map-container {
+  height: 25vh;
+  width: 35vh;
+}
+
+page-chat-messages .messages-page-content .message .message-timestamp {
+  position: absolute;
+  bottom: 2px;
+  right: 7px;
+  font-size: 12px;
+  color: gray;
+}
+
+page-chat-messages .messages-page-footer {
+  padding-right: 0;
+}
+
+page-chat-messages .messages-page-footer .message-editor {
+  margin-left: 2px;
+  padding-left: 5px;
+  background: white;
+  border-radius: 3px;
+}
+
+page-chat-messages .messages-page-footer .message-editor-button {
+  box-shadow: none;
+  width: 50px;
+  height: 50px;
+  font-size: 17px;
+  margin: auto;
+}
+
 page-home #map {
   width: 100%;
   height: 100%;

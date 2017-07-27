@@ -3,7 +3,6 @@ import {UserserviceProvider} from "../../providers/userservice/userservice";
 import { Geolocation } from '@ionic-native/geolocation';
 import {Platform, NavController} from 'ionic-angular';
 import { StockserviceProvider } from '../../providers/stockservice/stockservice';
-import {ChatChatsPage} from "../../pages/chat-chats/chat-chats";
 
 declare var BMap;
 declare var cordova:any;
@@ -18,6 +17,8 @@ export class HomePage {
   map:any;
   converter:any;
   @ViewChild('map') mapElement: ElementRef;
+
+  subscription : any;
 
   constructor(private userService: UserserviceProvider, 
     private readonly geolocation:Geolocation, 
@@ -63,7 +64,7 @@ export class HomePage {
     //   alert(data);
     // }
     // );
-    cordova.plugins.videorecorder.recordVideo(this.userService.userID, this.jd, this.wd);
+    //cordova.plugins.videorecorder.recordVideo(this.userService.userID, this.jd, this.wd);
   }
 
   chat() {
