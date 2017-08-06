@@ -10,6 +10,7 @@ import {StatusBar} from '@ionic-native/status-bar';
 import {SplashScreen} from '@ionic-native/splash-screen';
 import {Storage, IonicStorageModule} from "@ionic/storage";
 import { Geolocation } from '@ionic-native/geolocation';
+import { Crop } from '@ionic-native/crop';
 //pages
 import {HomePage} from '../pages/home/home';
 import {LoginPage} from "../pages/login/login";
@@ -20,6 +21,7 @@ import { UserserviceProvider } from '../providers/userservice/userservice';
 import { StockserviceProvider } from '../providers/stockservice/stockservice';
 import { StompService } from 'ng2-stomp-service';
 import { ChatserviceProvider } from '../providers/chatservice/chatservice';
+import { PictureserviceProvider } from '../providers/pictureservice/pictureservice';
 
 export function authHttpServiceFactory(http: Http, options: RequestOptions, storage: Storage) {
   const authConfig = new AuthConfig({
@@ -57,6 +59,7 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions, stor
     StatusBar,
     SplashScreen,
     Geolocation,
+    Crop,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AuthProvider,
     JwtHelper, {
@@ -67,7 +70,8 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions, stor
     UserserviceProvider,
     StockserviceProvider,
     StompService,
-    ChatserviceProvider]
+    ChatserviceProvider,
+    PictureserviceProvider]
 })
 export class AppModule {
 }

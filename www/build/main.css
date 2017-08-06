@@ -27638,3 +27638,31 @@ page-home .chatButton {
   margin-left: -50px;
   margin-right: -50px;
 }
+
+page-home .profileButton {
+  position: absolute;
+  bottom: 30%;
+  right: 50%;
+  z-index: 2;
+  margin-left: -50px;
+  margin-right: -50px;
+}
+
+page-profile .profile-page-content .profile-picture {
+  max-width: 300px;
+  display: block;
+  margin: auto;
+}
+
+page-profile .profile-page-content .profile-picture img {
+  margin-bottom: -33px;
+  width: 100%;
+}
+
+page-profile .profile-page-content .profile-picture ion-icon {
+  float: right;
+  font-size: 30px;
+  opacity: 0.5;
+  border-left: black solid 1px;
+  padding-left: 5px;
+}

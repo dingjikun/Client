@@ -71,4 +71,8 @@ export class HomePage {
     this.navCtrl.push('ChatChatsPage');
   }
 
+  profile() {
+    this.navCtrl.push('ProfilePage');
+  }
+
 }

@@ -25,4 +25,13 @@ page-home {
         margin-left: -50px;
         margin-right: -50px;
     }
+
+    .profileButton{
+        position: absolute;  
+        bottom:30%;
+        right: 50%; 
+        z-index: 2; 
+        margin-left: -50px;
+        margin-right: -50px;
+    }
 }

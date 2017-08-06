@@ -21,3 +21,9 @@ export enum MessageType {
   LOCATION = <any>'location',
   PICTURE = <any>'picture'
 }
+
+export interface Profile {
+  name?: string;
+  picture?: string;
+  pictureId?: string;
+}
